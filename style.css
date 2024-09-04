@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: none;
+}
+
+.college-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.college-info .logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.class-info h2 {
+    font-size: 1.5rem;
+    color: #272323 solid;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #262424 solid;
+    margin: 10px 0;
+    letter-spacing: 1.5px;
+}
+
+header h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #2c2828 solid;
+    margin: 5px 0;
+    letter-spacing: 1.2px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .college-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .class-info h2 {
+        font-size: 1.25rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .college-info .logo {
+        max-width: 100px;
+    }
+
+    .class-info h2 {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    header h2 {
+        font-size: 1.25rem;
+    }
+}
+
+
+/*1st section */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Section Styling */
+.quote-section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.photo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.photo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.quote-container {
+    flex: 2;
+}
+
+.quote {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .quote {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote {
+        font-size: 1rem;
+    }
+
+    .photo {
+        max-width: 200px;
+    }
+}
+
+/*student section*/
+
+/* Section Styling */
+.class-photo-section {
+    background-image: url('backgd.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.photo-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+}
+
+.group-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.class-caption {
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .class-caption {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .class-caption {
+        font-size: 1.25rem;
+    }
+
+    .photo-container {
+        padding: 15px;
+    }
+}
+
+.parallax {
+    /* Set a background image */
+    background-image: url('backgd.jpg');
+   
+    /* Parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750vh;
+}
+
+/*footer section*/
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
